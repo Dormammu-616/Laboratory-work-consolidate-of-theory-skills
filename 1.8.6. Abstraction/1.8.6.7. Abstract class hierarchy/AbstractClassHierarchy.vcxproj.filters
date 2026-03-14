@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\lab 1">
+      <UniqueIdentifier>{0e6f2379-9b0d-4b95-a797-ebb39d2944b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\lab 1">
+      <UniqueIdentifier>{3f09a80c-1f2a-4bbc-a218-b3aa94add33f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lab 2">
+      <UniqueIdentifier>{2f55db78-2f98-4c4e-8d49-543cf9d3de8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\lab 2">
+      <UniqueIdentifier>{21004011-5026-4eb1-bf2c-dd19caf9894f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lab 3">
+      <UniqueIdentifier>{65e9a2bc-45ce-4d27-bf74-5456a38c79a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\lab 3">
+      <UniqueIdentifier>{efc5eefd-3a30-4b80-81da-4b953895676a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="1.8.6.7. Abstract class hierarchy.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 1 - Architectural pattern Taxonomy\Architectural pattern Taxonomy.cpp">
+      <Filter>Исходные файлы\lab 1</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 1 - Architectural pattern Taxonomy\AbstractComputeInstance.cpp">
+      <Filter>Исходные файлы\lab 1</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 1 - Architectural pattern Taxonomy\AbstractContainer.cpp">
+      <Filter>Исходные файлы\lab 1</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 1 - Architectural pattern Taxonomy\DockerContainer.cpp">
+      <Filter>Исходные файлы\lab 1</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 1 - Architectural pattern Taxonomy\PodmanContainer.cpp">
+      <Filter>Исходные файлы\lab 1</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 2 - Safe state injection\Safe state injection.cpp">
+      <Filter>Исходные файлы\lab 2</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 2 - Safe state injection\AbstractLocalModel.cpp">
+      <Filter>Исходные файлы\lab 2</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 2 - Safe state injection\LLMTextModel.cpp">
+      <Filter>Исходные файлы\lab 2</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 3 - Interface separation principle\SmartCityTelemetry.cpp">
+      <Filter>Исходные файлы\lab 3</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 3 - Interface separation principle\SecureWiFiSender.cpp">
+      <Filter>Исходные файлы\lab 3</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 3 - Interface separation principle\OpenWiFiSender.cpp">
+      <Filter>Исходные файлы\lab 3</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 3 - Interface separation principle\NetworkSenderFactory.cpp">
+      <Filter>Исходные файлы\lab 3</Filter>
+    </ClCompile>
+    <ClCompile Include="lab 3 - Interface separation principle\CityThermometer.cpp">
+      <Filter>Исходные файлы\lab 3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lab 1 - Architectural pattern Taxonomy\ICloudResource.h">
+      <Filter>Файлы заголовков\lab 1</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 1 - Architectural pattern Taxonomy\AbstractComputeInstance.h">
+      <Filter>Файлы заголовков\lab 1</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 1 - Architectural pattern Taxonomy\AbstractContainer.h">
+      <Filter>Файлы заголовков\lab 1</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 1 - Architectural pattern Taxonomy\DockerContainer.h">
+      <Filter>Файлы заголовков\lab 1</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 1 - Architectural pattern Taxonomy\PodmanContainer.h">
+      <Filter>Файлы заголовков\lab 1</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 1 - Architectural pattern Taxonomy\Architectural pattern Taxonomy.h">
+      <Filter>Файлы заголовков\lab 1</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 2 - Safe state injection\Safe state injection.h">
+      <Filter>Файлы заголовков\lab 2</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 2 - Safe state injection\IModelInference.h">
+      <Filter>Файлы заголовков\lab 2</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 2 - Safe state injection\AbstractLocalModel.h">
+      <Filter>Файлы заголовков\lab 2</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 2 - Safe state injection\LLMTextModel.h">
+      <Filter>Файлы заголовков\lab 2</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 3 - Interface separation principle\SmartCityTelemetry.h">
+      <Filter>Файлы заголовков\lab 3</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 3 - Interface separation principle\ITelemetrySensor.h">
+      <Filter>Файлы заголовков\lab 3</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 3 - Interface separation principle\INetworkSender.h">
+      <Filter>Файлы заголовков\lab 3</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 3 - Interface separation principle\AbstractWiFiSender.h">
+      <Filter>Файлы заголовков\lab 3</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 3 - Interface separation principle\SecureWiFiSender.h">
+      <Filter>Файлы заголовков\lab 3</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 3 - Interface separation principle\OpenWiFiSender.h">
+      <Filter>Файлы заголовков\lab 3</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 3 - Interface separation principle\NetworkSenderFactory.h">
+      <Filter>Файлы заголовков\lab 3</Filter>
+    </ClInclude>
+    <ClInclude Include="lab 3 - Interface separation principle\CityThermometer.h">
+      <Filter>Файлы заголовков\lab 3</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
