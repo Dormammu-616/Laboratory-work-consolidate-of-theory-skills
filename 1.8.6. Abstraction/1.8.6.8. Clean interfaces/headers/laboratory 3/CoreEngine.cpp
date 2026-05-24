@@ -11,8 +11,8 @@ public:
 private:
 	std::string internal_version{"vers 1.0"};
 	double physics_matrix[100]{1.1};
-	//double physics_matrix[10000]{ 1.1 };	// для эксперимента
-	//const size_t cylinder_count{ 6 };		// для эксперимента
+	//double physics_matrix[10000]{ 1.1 };	// Г¤Г«Гї ГЅГЄГ±ГЇГҐГ°ГЁГ¬ГҐГ­ГІГ 
+	//const size_t cylinder_count{ 6 };		// Г¤Г«Гї ГЅГЄГ±ГЇГҐГ°ГЁГ¬ГҐГ­ГІГ 
 	bool is_warmed_up{ false };
 };
 
@@ -24,7 +24,7 @@ void CoreEngine::initialize()
 	//std::cout << "[CoreEngine] Data experiment:\n"
 	//	<< "\tversion - "<< internal_version << "\n"
 	//	<< "\tfirst elem matrix - " << physics_matrix[0] << "\n"
-	//	<< "\tcylinder count - " << cylinder_count << "\n"; // для эксперимента
+	//	<< "\tcylinder count - " << cylinder_count << "\n"; // Г¤Г«Гї ГЅГЄГ±ГЇГҐГ°ГЁГ¬ГҐГ­ГІГ 
 
 	is_warmed_up = true;
 	std::cout << "[CoreEngine] Is warmed up? " << is_warmed_up << "\n";
