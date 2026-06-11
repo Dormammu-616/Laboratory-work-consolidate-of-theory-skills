@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 1">
+      <UniqueIdentifier>{67ff7dea-ac95-46c3-9a79-eea2ced8a926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 2">
+      <UniqueIdentifier>{1c7475e8-84e4-46fd-b173-4a4f104af80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 3">
+      <UniqueIdentifier>{ba8b7d31-5a02-4981-b379-943102b106bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 1">
+      <UniqueIdentifier>{2ecefb12-4cbf-4ddf-b810-8a086e97af29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 2">
+      <UniqueIdentifier>{eca3daba-abd8-4ced-9d52-81dd239d3fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 3">
+      <UniqueIdentifier>{df32e214-54b2-4e87-b2a2-4a73d8bc6275}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 1\MySQLRepository.cpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 1\MemoryRepository.cpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 1\OrderService.cpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 2\StripePaymentProcessor.cpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 2\LoggingPaymentProcessor.cpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 2\StoreCheckout.hpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 2\StoreCheckout.cpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 3\CsvExportStrategy.cpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 3\JsonExportStrategy.cpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClCompile>
+    <ClCompile Include="headers\laboratory 3\ReportManager.cpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\laboratory 1\IRepository.hpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 1\MySQLRepository.hpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 1\MemoryRepository.hpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 1\OrderService.hpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 2\IPaymentProcessor.hpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 2\StripePaymentProcessor.hpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 2\LoggingPaymentProcessor.hpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 3\IExportStrategy.hpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 3\JsonExportStrategy.hpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 3\CsvExportStrategy.hpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\laboratory 3\ReportManager.hpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
