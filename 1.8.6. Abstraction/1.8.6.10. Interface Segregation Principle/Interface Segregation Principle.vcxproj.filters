@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 1">
+      <UniqueIdentifier>{81455fae-1d6f-4862-81d1-ee0af20fffe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 2">
+      <UniqueIdentifier>{55ed1a00-73b3-4f12-8431-d189ecb18412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 3">
+      <UniqueIdentifier>{81aa0787-b97f-469d-9002-5dc97a38e532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 1">
+      <UniqueIdentifier>{eb7580cb-cd2a-4870-8715-6471348f4d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 2">
+      <UniqueIdentifier>{2b739cae-8331-422a-be39-355611ac950b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 3">
+      <UniqueIdentifier>{076465d5-59f2-4003-a1ec-82a9c6e15b40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 1\SimplePrinter.cpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 1\AdvancedMFP.cpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 1\DocumentManager.cpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 2\LegacyRobot.cpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 2\RobotMoverAdapter.cpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 2\LogisticsSystem.cpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 3\CloudServer.cpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 3\CloudClients.cpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\laboratory 1\IFax.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 1\IPrinter.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 1\IScanner.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 1\SimplePrinter.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 1\AdvancedMFP.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 1\DocumentManager.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\IMover.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\IUniversalRobotAPI.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\LegacyRobot.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\RobotMoverAdapter.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\LogisticsSystem.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\IComputeNode.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\IMonitorable.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\IRebootable.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\CloudServer.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\CloudClients.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
