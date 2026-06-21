@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 1">
+      <UniqueIdentifier>{f21081f8-9af6-4aad-a7c7-ff41b2c85753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 2">
+      <UniqueIdentifier>{d7a80eb5-9058-4fcc-a1a6-df8bb1cf0d79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\laboratory 3">
+      <UniqueIdentifier>{3e95bf29-ef93-4fd8-86ee-425110cd65ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 1">
+      <UniqueIdentifier>{805300b3-3643-4c3d-8c3e-62f474dcd60f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 2">
+      <UniqueIdentifier>{609007ad-a026-4c09-ac18-41773408f90d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\laboratory 3">
+      <UniqueIdentifier>{7b225013-2ec3-4df9-81e9-e372167fc6be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 1\MockCustomerRepository.cpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 1\PostgreSQLCustomerRepository.cpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 1\LoanCalculator.cpp">
+      <Filter>Исходные файлы\laboratory 1</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 2\TwilioApi.cpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 2\TwilioNotifierAdapter.cpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 2\UserManager.cpp">
+      <Filter>Исходные файлы\laboratory 2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 3\CreditCardPayment.cpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 3\CryptoPayment.cpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\laboratory 3\OrderCheckout.cpp">
+      <Filter>Исходные файлы\laboratory 3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\laboratory 1\ICustomerRepository.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 1\MockCustomerRepository.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 1\PostgreSQLCustomerRepository.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 1\LoanCalculator.hpp">
+      <Filter>Файлы заголовков\laboratory 1</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\INotifier.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\TwilioApi.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\TwilioNotifierAdapter.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 2\UserManager.hpp">
+      <Filter>Файлы заголовков\laboratory 2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\IPaymentMethod.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\CreditCardPayment.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\CryptoPayment.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+    <ClInclude Include="include\laboratory 3\OrderCheckout.hpp">
+      <Filter>Файлы заголовков\laboratory 3</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
