@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.15)
+
+# Название проекта и язык
+project(MixinsLab VERSION 1.0 LANGUAGES CXX)
+
+# Задаем стандарт C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF) # Отключаем специфичные расширения компиляторов
+
+# Добавляем исполняемый файл (наша точка сборки)
+add_executable(MixinsApp src/main.cpp)
+
+# Указываем, где искать заголовочные файлы
+target_include_directories(MixinsApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+# Включаем максимальный уровень предупреждений (аналог /W4 и /WX)
+if(MSVC)
+    target_compile_options(MixinsApp PRIVATE /W4 /WX)
+else()
+    target_compile_options(MixinsApp PRIVATE -Wall -Wextra -Werror)
+endif()
