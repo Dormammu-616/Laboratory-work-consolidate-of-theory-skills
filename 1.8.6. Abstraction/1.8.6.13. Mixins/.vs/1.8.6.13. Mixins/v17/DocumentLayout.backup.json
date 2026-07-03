@@ -3,7 +3,20 @@
   "WorkspaceRootPath": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043E\u0431\u0437\u043E\u0440\u0430 CMake||{B1CAA5B0-FEB1-4350-8AB9-F895876842F2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\ValidationMixin.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\lab1\\ValidationMixin.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\LoggingMixin.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\lab1\\LoggingMixin.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\CorePacketProcessor.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\lab1\\CorePacketProcessor.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,12 +38,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CorePacketProcessor.hpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\CorePacketProcessor.hpp",
+              "RelativeDocumentMoniker": "include\\lab1\\CorePacketProcessor.hpp",
+              "ToolTip": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\CorePacketProcessor.hpp",
+              "RelativeToolTip": "include\\lab1\\CorePacketProcessor.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-07-03T21:20:59.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043E\u0431\u0437\u043E\u0440\u0430 CMake",
-              "DocumentMoniker": "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043E\u0431\u0437\u043E\u0440\u0430 CMake",
-              "ToolTip": "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043E\u0431\u0437\u043E\u0440\u0430 CMake",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-07-03T19:25:50.647Z",
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-07-03T21:02:59.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValidationMixin.hpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\ValidationMixin.hpp",
+              "RelativeDocumentMoniker": "include\\lab1\\ValidationMixin.hpp",
+              "ToolTip": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\ValidationMixin.hpp",
+              "RelativeToolTip": "include\\lab1\\ValidationMixin.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-07-03T20:55:16.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoggingMixin.hpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\LoggingMixin.hpp",
+              "RelativeDocumentMoniker": "include\\lab1\\LoggingMixin.hpp",
+              "ToolTip": "D:\\C\u002B\u002B\\Project - Active\\Laboratory-work\\1.8.6. Abstraction\\1.8.6.13. Mixins\\include\\lab1\\LoggingMixin.hpp",
+              "RelativeToolTip": "include\\lab1\\LoggingMixin.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-07-03T20:39:34.846Z",
               "EditorCaption": ""
             }
           ]
