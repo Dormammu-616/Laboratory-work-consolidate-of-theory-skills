@@ -12,7 +12,5 @@ namespace lab2
 				<< static_cast<const Derived*>(this)->get_model_name()
 				<< "\n";
 		}
-	private:
-
 	};
 }
