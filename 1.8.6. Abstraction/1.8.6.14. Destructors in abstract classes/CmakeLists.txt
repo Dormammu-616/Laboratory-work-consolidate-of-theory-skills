@@ -9,7 +9,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF) # Отключаем специфичные расширения компиляторов
 
 # Добавляем исполняемый файл (наша точка сборки)
-add_executable(DestructorsInAbstractClassesApp src/main.cpp)
+add_executable(DestructorsInAbstractClassesApp 
+    src/main.cpp
+    src/lab1/ConsoleWindow.cpp
+    src/lab1/HardwareAcceleratedWindow.cpp
+    src/lab1/SessionManager.cpp
+)
 
 # Указываем, где искать заголовочные файлы
 target_include_directories(DestructorsInAbstractClassesApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
