@@ -18,7 +18,7 @@ int main()
 
 		manager.add_window(std::make_unique<lab1::ConsoleWindow>());
 		manager.add_window(std::make_unique<lab1::HardwareAcceleratedWindow>());
-
+		
 		manager.render_all();
 	}
 	std::cout << "*** End laboratory #1 ***\n\n";
