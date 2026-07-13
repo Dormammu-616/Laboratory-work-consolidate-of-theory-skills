@@ -1,6 +1,10 @@
 #include "lab1/SessionManager.hpp"
 #include "lab1/ConsoleWindow.hpp"
 #include "lab1/HardwareAcceleratedWindow.hpp"
+#include "lab2/ConnectionPool.hpp"
+#include "lab2/NetworkConnection.hpp"
+#include "lab2/DatabaseConnection.hpp"
+#include "lab2/SecurityPolicy.hpp"
 #include <iostream>
 #include <memory>
 
@@ -17,9 +21,18 @@ int main()
 	}
 	std::cout << "*** End laboratory #1 ***\n\n";
 
-	std::cout << "*** Start laboratory #2 -  ***\n";
+	std::cout << "*** Start laboratory #2 - Protected destructor and type erasure ***\n";
 	{
-		
+		lab2::ConnectionPool pool{};
+
+		pool.add_policy(std::make_shared<lab2::NetworkConnection>());
+		pool.add_policy(std::make_shared<lab2::DatabaseConnection>());
+		pool.verify_all();
+
+		// Архитектурный тест (Compile-time error):
+		//std::unique_ptr<lab2::SecurityPolicy> ptr_policy{ std::make_unique<lab2::NetworkConnection>() };
+		// ошибка компилятор: std::unique_ptr использует статическое связывание и пытается вызвать delete для указателя типа SecurityPolicy.
+		// Так как деструктор SecurityPolicy объявлен как protected, внешний код (включая default_delete) не имеет к нему доступа. Это предотвращает UB.
 	}
 	std::cout << "*** End laboratory #2 ***\n\n";
 

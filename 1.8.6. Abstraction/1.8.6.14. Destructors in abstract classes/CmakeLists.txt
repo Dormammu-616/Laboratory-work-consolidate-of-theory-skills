@@ -14,6 +14,10 @@ add_executable(DestructorsInAbstractClassesApp
     src/lab1/ConsoleWindow.cpp
     src/lab1/HardwareAcceleratedWindow.cpp
     src/lab1/SessionManager.cpp
+
+    src/lab2/NetworkConnection.cpp
+    src/lab2/DatabaseConnection.cpp
+    src/lab2/ConnectionPool.cpp
 )
 
 # Указываем, где искать заголовочные файлы
