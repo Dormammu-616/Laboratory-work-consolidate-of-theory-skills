@@ -18,6 +18,11 @@ add_executable(DestructorsInAbstractClassesApp
     src/lab2/NetworkConnection.cpp
     src/lab2/DatabaseConnection.cpp
     src/lab2/ConnectionPool.cpp
+
+    src/lab3/IEventPayload.cpp
+    src/lab3/DisconnectEvent.cpp
+    src/lab3/TimeoutEvent.cpp
+    src/lab3/EventBus.cpp
 )
 
 # Указываем, где искать заголовочные файлы

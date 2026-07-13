@@ -4,7 +4,9 @@
 #include "lab2/ConnectionPool.hpp"
 #include "lab2/NetworkConnection.hpp"
 #include "lab2/DatabaseConnection.hpp"
-#include "lab2/SecurityPolicy.hpp"
+#include "lab3/EventBus.hpp"
+#include "lab3/DisconnectEvent.hpp"
+#include "lab3/TimeoutEvent.hpp"
 #include <iostream>
 #include <memory>
 
@@ -37,9 +39,14 @@ int main()
 	std::cout << "*** End laboratory #2 ***\n\n";
 
 
-	std::cout << "*** Start laboratory #3 -  ***\n";
+	std::cout << "*** Start laboratory #3 - Pure virtual destructor ***\n";
 	{
-		
+		lab3::EventBus event_bus{};
+
+		event_bus.publish(std::make_unique<lab3::DisconnectEvent>(404));
+		event_bus.publish(std::make_unique<lab3::TimeoutEvent>("RenderThread"));
+
+		event_bus.process_events();
 	}
 	std::cout << "*** End laboratory #3 ***\n\n";
 
