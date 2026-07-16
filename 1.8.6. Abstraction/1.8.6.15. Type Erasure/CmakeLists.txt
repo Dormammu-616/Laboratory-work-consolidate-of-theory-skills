@@ -11,9 +11,10 @@ set(CMAKE_CXX_EXTENSIONS OFF) # Отключаем специфичные рас
 # Добавляем исполняемый файл (наша точка сборки)
 add_executable(TypeErasureApp
 	src/main.cpp
-	include/lab1/AnyRenderable.hpp
-	include/lab1/RenderPipeline.hpp
-	include/lab1/Shapes.hpp
+	
+	# lab 1 - Basic Concept/Model Idiom
+	src/lab1/RenderPipeline.cpp
+	
 )
 
 # Указываем, где искать заголовочные файлы
