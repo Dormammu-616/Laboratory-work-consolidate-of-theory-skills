@@ -19,7 +19,7 @@ int main()
 	}
 	std::cout << "*** End laboratory #1 ***\n\n";
 
-	std::cout << "*** Start laboratory #2 -  ***\n";
+	std::cout << "*** Start laboratory #2 - Type Erasure-Value Semantics ***\n";
 	{
 		
 	}
