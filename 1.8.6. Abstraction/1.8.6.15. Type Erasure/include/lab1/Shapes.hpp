@@ -8,7 +8,7 @@ namespace lab1
 	public:
 		void render() const
 		{
-			std::cout << "[Circle] Rendering Circle.\n";
+			std::cout << "\t[Circle] Rendering Circle.\n";
 		}
 	};
 
@@ -17,7 +17,7 @@ namespace lab1
 	public:
 		void render() const
 		{
-			std::cout << "[Square] Rendering Square.\n";
+			std::cout << "\t[Square] Rendering Square.\n";
 		}
 	};
 
@@ -28,7 +28,7 @@ namespace lab1
 		public:
 			void render() const
 			{
-				std::cout << "[ThirdParty::OptimizedMesh] Rendering highly optimized Third-Party Mesh.\n";
+				std::cout << "\t[ThirdParty::OptimizedMesh] Rendering highly optimized Third-Party Mesh.\n";
 			}
 		};
 	}

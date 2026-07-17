@@ -15,6 +15,7 @@ namespace lab1
 
 		void render() const
 		{
+			std::cout << "\t[AnyRenderable] Rendering for concept...\n";
 			pimpl_->do_render();
 		}
 	private:
