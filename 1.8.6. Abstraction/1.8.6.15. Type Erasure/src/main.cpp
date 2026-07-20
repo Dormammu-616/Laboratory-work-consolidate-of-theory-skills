@@ -2,6 +2,8 @@
 #include "lab1/Shapes.hpp"
 #include "lab2/SimulationGrid.hpp"
 #include "lab2/SpaceObjects.hpp"
+#include "lab3/JobScheduler.hpp"
+#include "lab3/BackgroundTasks.hpp"
 #include <iostream>
 
 int main()
@@ -40,9 +42,21 @@ int main()
 	std::cout << "*** End laboratory #2 ***\n\n";
 
 
-	std::cout << "*** Start laboratory #3 -  ***\n";
+	std::cout << "*** Start laboratory #3 - Type erasure with state mutation and return values ***\n";
 	{
-		
+		lab3::JobScheduler scheduler{};
+		lab3::DatabaseCleanup cleanup{};
+		lab3::AnyJob wrapped_cleanup(cleanup);
+		lab3::EmailNotification notification("notice");
+		lab3::Legacy::ReportGenerator generator{};
+
+		scheduler.schedule(wrapped_cleanup);
+		scheduler.schedule(wrapped_cleanup);
+		scheduler.schedule(notification);
+		scheduler.schedule(generator);
+
+		scheduler.run_all();
+		//scheduler.run_all(); //	проверка мутации: счетчик DatabaseCleanup увеличился на 10
 	}
 	std::cout << "*** End laboratory #3 ***\n\n";
 

@@ -36,6 +36,6 @@ namespace lab1
 				data.render();
 			}
 		};
-		std::unique_ptr<Concept> pimpl_;
+		std::unique_ptr<Concept> pimpl_{};
 	};
 }

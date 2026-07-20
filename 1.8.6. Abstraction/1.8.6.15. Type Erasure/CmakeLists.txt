@@ -17,6 +17,9 @@ add_executable(TypeErasureApp
 	
 	# lab 2 - Type Erasure-Value Semantics
 	src/lab2/SimulationGrid.cpp
+
+	# lab 3 - Type erasure with state mutation and return values
+	src/lab3/JobScheduler.cpp
 )
 
 # Указываем, где искать заголовочные файлы
