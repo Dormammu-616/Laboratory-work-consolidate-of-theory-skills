@@ -2,7 +2,11 @@
 #include "lab1/TransactionRecord.hpp"
 #include "lab1/DataExporter.hpp"
 //#include "lab1/SystemState.hpp"
+#include "lab2/AlgorithmRouter.hpp"
+#include "lab2/ExecutionEngine.hpp"
 #include <iostream>
+#include <list>
+#include <vector>
 
 int main()
 {
@@ -19,9 +23,19 @@ int main()
 	}
 	std::cout << "*** End laboratory #1 ***\n\n";
 
-	std::cout << "*** Start laboratory #2 -  ***\n";
+	std::cout << "*** Start laboratory #2 - Intelligent routing and standard concepts ***\n";
 	{
-		
+		std::list<size_t> list{0, 1, 2, 3, 4, 5};
+		std::vector<size_t> vec{11, 12, 13, 14, 15, 16, 17, 18, 19};
+
+		auto it_begin_list{ list.begin() };
+		auto it_begin_vec{ vec.begin() };
+
+		lab2::advance_cursor(it_begin_list, 2);
+		lab2::advance_cursor(it_begin_vec, 4);
+
+		auto lambda_for_process{ [](size_t val) { std::cout << "\tProcessing the value '"<< val <<"' in a lambda expression.\n"; } };
+		lab2::JobDispatcher::execute_callback(5, lambda_for_process);
 	}
 	std::cout << "*** End laboratory #2 ***\n\n";
 

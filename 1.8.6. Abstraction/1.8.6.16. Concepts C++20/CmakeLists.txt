@@ -18,7 +18,10 @@ add_executable(ConceptApp
 	include/lab1/TransactionRecord.hpp
 	include/lab1/SystemState.hpp
 	include/lab1/DataExporter.hpp
-	# lab 2 - 
+	
+	# lab 2 - Intelligent routing and standard concepts
+	include/lab2/AlgorithmRouter.hpp
+	include/lab2/ExecutionEngine.hpp
 	
 	# lab 3 - 
 )
