@@ -4,6 +4,8 @@
 //#include "lab1/SystemState.hpp"
 #include "lab2/AlgorithmRouter.hpp"
 #include "lab2/ExecutionEngine.hpp"
+#include "lab3/DataProcessor.hpp"
+#include "lab3/DataModels.hpp"
 #include <iostream>
 #include <list>
 #include <vector>
@@ -40,9 +42,14 @@ int main()
 	std::cout << "*** End laboratory #2 ***\n\n";
 
 
-	std::cout << "*** Start laboratory #3 -  ***\n";
+	std::cout << "*** Start laboratory #3 - Compound & Nested Requirements ***\n";
 	{
+		lab3::WarehouseProcessor processor{};
+		lab3::BoxedGoods goods{};
+		processor.process_item(goods);
 		
+		//lab3::HeavyMachinery machinery{};
+		//processor.process_item(machinery); // ОШИБКА C2672 - не найдена перегруженная функция WarehouseProcessor::process_item
 	}
 	std::cout << "*** End laboratory #3 ***\n\n";
 
