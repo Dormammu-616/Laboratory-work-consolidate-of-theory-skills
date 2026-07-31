@@ -8,12 +8,18 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF) # Отключаем специфичные расширения компиляторов
 
+# Добавляем разрешение использование std::fopen
+add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
+
 # Добавляем исполняемый файл (наша точка сборки)
 add_executable(IdiomeRAIIandSBRMApp
 	src/main.cpp
 
-	# lab 1 - 
-	
+	# lab 1 - Encapsulating a Legacy C-API
+	include/lab1/FileDeleter.hpp
+	include/lab1/AuditFileHandle.hpp
+	include/lab1/AuditLogger.hpp
+	src/lab1/AuditLogger.cpp
 	
 	# lab 2 - 
 	
