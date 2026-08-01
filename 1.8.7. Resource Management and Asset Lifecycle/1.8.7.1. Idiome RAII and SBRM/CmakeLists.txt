@@ -21,8 +21,10 @@ add_executable(IdiomeRAIIandSBRMApp
 	include/lab1/AuditLogger.hpp
 	src/lab1/AuditLogger.cpp
 	
-	# lab 2 - 
-	
+	# lab 2 - Transactional Construction
+	include/lab2/MockFileHandle.hpp
+	include/lab2/MockSocketHandle.hpp
+	include/lab2/DatabaseNode.hpp
 	
 	# lab 3 - 
 	

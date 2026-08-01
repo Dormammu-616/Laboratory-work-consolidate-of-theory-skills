@@ -1,4 +1,5 @@
 #include "lab1/AuditLogger.hpp"
+#include "lab2/DatabaseNode.hpp"
 #include <iostream>
 
 void test_early_exit(bool abort_early)
@@ -40,15 +41,30 @@ int main()
 			}
 			catch (const std::runtime_error& e)
 			{
-				std::cout << " Exception caught: " << e.what() << "\n";
+				std::cout << "Exception caught: " << e.what() << "\n";
 			}
 		}
 	}
 	std::cout << "*** End laboratory #1 ***\n\n";
 
-	std::cout << "*** Start laboratory #2 -  ***\n";
+	std::cout << "*** Start laboratory #2 - Transactional Construction ***\n";
 	{
-		
+		std::cout << "--- Successful start ---\n";
+		{
+			lab2::DatabaseNode node{ "local.db", 8080 };
+		}
+
+		std::cout << "--- Rollback on failure ---\n";
+		{
+			try
+			{
+				lab2::DatabaseNode crasher_node{ "local.db", 80 };
+			}
+			catch (std::exception& e)
+			{
+				std::cout << "Exception caught: " << e.what() << "\n";
+			}
+		}
 	}
 	std::cout << "*** End laboratory #2 ***\n\n";
 
