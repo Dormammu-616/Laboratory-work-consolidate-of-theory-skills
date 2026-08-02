@@ -26,8 +26,9 @@ add_executable(IdiomeRAIIandSBRMApp
 	include/lab2/MockSocketHandle.hpp
 	include/lab2/DatabaseNode.hpp
 	
-	# lab 3 - 
-	
+	# lab 3 - Strong Exception Guarantee
+	include/lab3/SecureBuffer.hpp
+    src/lab3/SecureBuffer.cpp
 )
 
 # Указываем, где искать заголовочные файлы
