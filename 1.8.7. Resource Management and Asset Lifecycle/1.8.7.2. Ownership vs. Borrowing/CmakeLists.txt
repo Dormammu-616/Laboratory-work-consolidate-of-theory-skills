@@ -12,8 +12,18 @@ set(CMAKE_CXX_EXTENSIONS OFF) # Отключаем специфичные рас
 add_executable(OwnershipAndBorrowingApp
 	src/main.cpp
 	
-	# lab 1 - 
-	
+	# lab 1 - Strict Contracts: Observers and Mutators
+	include/lab1/Transaction.hpp
+	include/lab1/FraudFilter.hpp
+	include/lab1/FeeApplier.hpp
+	include/lab1/TransactionProcessor.hpp
+
+	src/lab1/Transaction.cpp
+	src/lab1/FraudFilter.cpp
+	src/lab1/FeeApplier.cpp
+	src/lab1/TransactionProcessor.cpp
+
+
 	# lab 2 - 
 	
 	# lab 3 - 
