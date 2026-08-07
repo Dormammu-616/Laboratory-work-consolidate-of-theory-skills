@@ -1,0 +1,7 @@
+# Скрытая папка настроек Visual Studio
+**/.vs/
+*.user
+
+# Папки сборки CMake
+out/
+build/
