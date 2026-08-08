@@ -24,7 +24,14 @@ add_executable(OwnershipAndBorrowingApp
 	src/lab1/TransactionProcessor.cpp
 
 
-	# lab 2 - 
+	# lab 2 - Zero-Overhead Borrowing
+	include/lab2/Packet.hpp
+	include/lab2/SignatureScanner.hpp
+	include/lab2/PacketAnalyzer.hpp
+
+	src/lab2/Packet.cpp
+	src/lab2/SignatureScanner.cpp
+	src/lab2/PacketAnalyzer.cpp
 	
 	# lab 3 - 
 	

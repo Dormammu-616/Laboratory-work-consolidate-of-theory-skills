@@ -1,4 +1,7 @@
 #include "lab1/TransactionProcessor.hpp"
+#include "lab2/SignatureScanner.hpp"
+#include "lab2/Packet.hpp"
+#include "lab2/PacketAnalyzer.hpp"
 #include <iostream>
 
 int main()
@@ -17,9 +20,17 @@ int main()
 	}
 	std::cout << "*** End laboratory #1 ***\n\n";
 
-	std::cout << "*** Start laboratory #2 -  ***\n";
+	std::cout << "*** Start laboratory #2 - Zero-Overhead Borrowing ***\n";
 	{
+		lab2::SignatureScanner scanner{};
+		lab2::PacketAnalyzer analyser{ scanner };
+		lab2::Packet packet{ 78, "HEADER:AUTH_KEY_999;BODY:DROP TABLE users;END" };
 
+		std::cout << "--- Launch with a contain signature ---\n";
+		analyser.analyze(packet, "BODY");
+		
+		std::cout << "\n--- Launch with a not contain signature ---\n";
+		analyser.analyze(packet, "NOTVALUE");
 	}
 	std::cout << "*** End laboratory #2 ***\n\n";
 
