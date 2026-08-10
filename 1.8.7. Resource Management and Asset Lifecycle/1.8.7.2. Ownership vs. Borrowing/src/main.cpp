@@ -2,6 +2,8 @@
 #include "lab2/SignatureScanner.hpp"
 #include "lab2/Packet.hpp"
 #include "lab2/PacketAnalyzer.hpp"
+#include "lab3/SessionManager.hpp"
+#include "lab3/SessionObserver.hpp"
 #include <iostream>
 
 int main()
@@ -35,9 +37,16 @@ int main()
 	std::cout << "*** End laboratory #2 ***\n\n";
 
 
-	std::cout << "*** Start laboratory #3 -  ***\n";
+	std::cout << "*** Start laboratory #3 - Safe Observation: Lifecycle Management via `std::weak_ptr` ***\n";
 	{
+		lab3::SessionManager manager{};
+		lab3::SessionObserver observer{};
 
+		observer.subscribe(manager.create_session(100));
+		observer.subscribe(manager.create_session(200));
+
+		manager.drop_session(100);
+		observer.report_active_sessions();
 	}
 	std::cout << "*** End laboratory #3 ***\n\n";
 

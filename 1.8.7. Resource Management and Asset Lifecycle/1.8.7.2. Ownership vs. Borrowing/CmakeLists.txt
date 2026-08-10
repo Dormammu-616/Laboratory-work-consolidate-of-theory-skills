@@ -33,8 +33,15 @@ add_executable(OwnershipAndBorrowingApp
 	src/lab2/SignatureScanner.cpp
 	src/lab2/PacketAnalyzer.cpp
 	
-	# lab 3 - 
-	
+
+	# lab 3 - Safe monitoring
+	include/lab3/ClientSession.hpp
+	include/lab3/SessionManager.hpp
+	include/lab3/SessionObserver.hpp
+
+	src/lab3/ClientSession.cpp
+	src/lab3/SessionManager.cpp
+	src/lab3/SessionObserver.cpp
 )
 
 # Указываем, где искать заголовочные файлы
