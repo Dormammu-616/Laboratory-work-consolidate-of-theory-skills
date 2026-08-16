@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.15)
+
+# Название проекта и язык
+project(StateManagement VERSION 1.0 LANGUAGES CXX)
+
+# Задаем стандарт
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF) # Отключаем специфичные расширения компиляторов
+
+# Добавляем исполняемый файл (наша точка сборки)
+add_executable(StateManagementApp
+	src/main.cpp
+	
+	# lab 1 - The Rule of Three and the shallow copy problem
+	include/lab1/RawNetworkBuffer.hpp
+	src/lab1/RawNetworkBuffer.cpp
+
+	# lab 2 - 
+	
+	
+
+	# lab 3 - 
+	
+)
+
+# Указываем, где искать заголовочные файлы
+target_include_directories(StateManagementApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+# Включаем максимальный уровень предупреждений (аналог /W4 и /WX)
+if(MSVC)
+    target_compile_options(StateManagementApp PRIVATE /W4 /WX)
+else()
+    target_compile_options(StateManagementApp PRIVATE -Wall -Wextra -Werror)
+endif()
