@@ -1,4 +1,5 @@
 #include "lab1/RawNetworkBuffer.hpp"
+#include "lab2/ImageBuffer.hpp"
 #include <iostream>
 
 int main()
@@ -20,9 +21,20 @@ int main()
 	}
 	std::cout << "*** End laboratory #1 ***\n\n";
 
-	std::cout << "*** Start laboratory #2 -  ***\n";
+	std::cout << "*** Start laboratory #2 - The Rule of Five and the semantics of movement ***\n";
 	{
+		lab2::ImageBuffer buffer_orig{ 1024 };
 		
+		std::cout << "--- Copying demonstration ---\n";
+		lab2::ImageBuffer buffer_copy{ buffer_orig };
+		lab2::ImageBuffer buffer_copy_copy{};
+		buffer_copy_copy = buffer_copy;
+		
+		std::cout << "--- Movement demonstration ---\n";
+		lab2::ImageBuffer buffer_move(std::move(buffer_orig));
+		buffer_copy = std::move(buffer_move);
+
+		std::cout << "--- Destructor ---\n";
 	}
 	std::cout << "*** End laboratory #2 ***\n\n";
 

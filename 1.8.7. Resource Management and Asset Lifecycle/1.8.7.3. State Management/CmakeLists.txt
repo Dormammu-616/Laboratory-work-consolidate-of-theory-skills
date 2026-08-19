@@ -16,8 +16,9 @@ add_executable(StateManagementApp
 	include/lab1/RawNetworkBuffer.hpp
 	src/lab1/RawNetworkBuffer.cpp
 
-	# lab 2 - 
-	
+	# lab 2 - The Rule of Five and the semantics of movement
+	include/lab2/ImageBuffer.hpp
+	src/lab2/ImageBuffer.cpp
 	
 
 	# lab 3 - 
