@@ -21,8 +21,9 @@ add_executable(StateManagementApp
 	src/lab2/ImageBuffer.cpp
 	
 
-	# lab 3 - 
-	
+	# lab 3 - Rule of Zero
+	include/lab3/DocumentManager.hpp
+	src/lab3/DocumentManager.cpp
 )
 
 # Указываем, где искать заголовочные файлы
