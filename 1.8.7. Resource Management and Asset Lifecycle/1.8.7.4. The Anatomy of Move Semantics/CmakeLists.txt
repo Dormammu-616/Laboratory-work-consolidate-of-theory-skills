@@ -12,10 +12,15 @@ set(CMAKE_CXX_EXTENSIONS OFF) # Отключаем специфичные рас
 add_executable(MoveSemanticsApp
 	src/main.cpp
 	
-	# lab 1 - 
-	
+	# lab 1 - Safe Resource Absorption
+	include/lab1/CryptoBuffer.hpp
+	include/lab1/GatewayRouter.hpp
+	src/lab1/CryptoBuffer.cpp
+	src/lab1/GatewayRouter.cpp
+
 	# lab 2 - 
 	
+
 	# lab 3 - 
 	
 )
