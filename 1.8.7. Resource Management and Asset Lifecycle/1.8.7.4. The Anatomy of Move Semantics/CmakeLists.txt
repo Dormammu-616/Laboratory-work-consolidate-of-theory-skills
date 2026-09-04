@@ -18,8 +18,10 @@ add_executable(MoveSemanticsApp
 	src/lab1/CryptoBuffer.cpp
 	src/lab1/GatewayRouter.cpp
 
-	# lab 2 - 
-	
+	# lab 2 - Perfect Forwarding
+	include/lab2/SecurityEvent.hpp
+	include/lab2/EventDispatcher.hpp
+	src/lab2/SecurityEvent.cpp
 
 	# lab 3 - 
 	

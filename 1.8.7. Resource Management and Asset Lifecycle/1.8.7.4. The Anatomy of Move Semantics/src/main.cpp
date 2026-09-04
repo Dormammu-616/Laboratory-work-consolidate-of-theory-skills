@@ -1,6 +1,8 @@
 #include <iostream>
 #include "lab1/CryptoBuffer.hpp"
 #include "lab1/GatewayRouter.hpp"
+#include "lab2/EventDispatcher.hpp"
+#include "lab2/SecurityEvent.hpp"
 
 int main()
 {
@@ -24,9 +26,21 @@ int main()
 	}
 	std::cout << "*** End laboratory #1 ***\n\n";
 
-	std::cout << "*** Start laboratory #2 -  ***\n";
+	std::cout << "*** Start laboratory #2 - Perfect Forwarding ***\n";
 	{
+		std::cout << "--- Instantiating the event dispatcher ---\n";
+		lab2::EventDispatcher dispatcher{};
 
+		std::cout << "\n--- Scenario 1: routing lvalue (copy) ---\n";
+		lab2::SecurityEvent cacher_event{ 1, "Login_Failed" };
+		dispatcher.dispatch(cacher_event);
+
+		std::cout << "\n--- Scenario 2: routing prvalue (move) ---\n";
+		dispatcher.dispatch(lab2::SecurityEvent{ 2, "SQL_Injection_Attempt" });
+
+		std::cout << "\n--- Scenario 3: routing xvalue (move) ---\n";
+		lab2::SecurityEvent obsolete_event{ 3, "Token_Expired" };
+		dispatcher.dispatch(std::move(obsolete_event));
 	}
 	std::cout << "*** End laboratory #2 ***\n\n";
 
