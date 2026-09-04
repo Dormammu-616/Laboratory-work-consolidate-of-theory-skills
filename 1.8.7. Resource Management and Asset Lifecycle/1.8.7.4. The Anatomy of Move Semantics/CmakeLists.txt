@@ -23,8 +23,9 @@ add_executable(MoveSemanticsApp
 	include/lab2/EventDispatcher.hpp
 	src/lab2/SecurityEvent.cpp
 
-	# lab 3 - 
-	
+	# lab 3 - Architecture Zero-Overhead
+	include/lab3/LogAggregator.hpp
+	src/lab3/LogAggregator.cpp
 )
 
 # Указываем, где искать заголовочные файлы
@@ -32,7 +33,7 @@ target_include_directories(MoveSemanticsApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/
 
 # Включаем максимальный уровень предупреждений (аналог /W4 и /WX)
 if(MSVC)
-    target_compile_options(MoveSemanticsApp PRIVATE /W4 /WX)
+    target_compile_options(MoveSemanticsApp PRIVATE /W4 /WX /analyze)
 else()
     target_compile_options(MoveSemanticsApp PRIVATE -Wall -Wextra -Werror)
 endif()

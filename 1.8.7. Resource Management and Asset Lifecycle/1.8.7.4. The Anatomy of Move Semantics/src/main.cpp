@@ -3,6 +3,7 @@
 #include "lab1/GatewayRouter.hpp"
 #include "lab2/EventDispatcher.hpp"
 #include "lab2/SecurityEvent.hpp"
+#include "lab3/LogAggregator.hpp"
 
 int main()
 {
@@ -45,9 +46,18 @@ int main()
 	std::cout << "*** End laboratory #2 ***\n\n";
 
 
-	std::cout << "*** Start laboratory #3 -  ***\n";
+	std::cout << "*** Start laboratory #3 - Architecture Zero-Overhead ***\n";
 	{
+		std::cout << "--- Scenario 1: Proof of RVO and the Zero Rule ---\n";
+		lab3::LogAggregator aggregator{ lab3::LogAggregator::create_aggregator("NetworkNode") };
 
+		std::cout << "\n--- Scenario 2: Moving a composite object ---\n";
+		lab3::LogAggregator backup_aggregator{ std::move(aggregator) };
+		std::cout << "\tsize backup aggregator after 'move':\t" << backup_aggregator.get_size_log() << "\n";
+		std::cout << "\tsize original aggregator after 'move':\t" << aggregator.get_size_log() << "\n";
+
+		std::cout << "\n--- Scenario 3: Architectural test on UB ---\n";
+		std::string_view dangling{ lab3::LogAggregator::create_aggregator("Temp").get_node_name() };
 	}
 	std::cout << "*** End laboratory #3 ***\n\n";
 
